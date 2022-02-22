@@ -29,7 +29,8 @@ _Note: a team in the bot's context is currently just a single SMS number_
 
 **Sending an SMS**  
 1. Once a team has been configured, you can select the team from the dropdown in the card.
-2. With a team selected, enter the text you want to send to the SMS number.
+2. With a team selected, enter the text you want to send to the SMS number.  
+![Screen Shot 2022-02-22 at 4 51 17 PM](https://user-images.githubusercontent.com/19175490/155225656-48195814-411b-4eee-b910-4651439e3c64.png)
 3. Click send, and the mobile number configured as the team should receive the SMS.
 4. With your mobile device, you can reply one time to the message received by your mobile device.
 5. Both the sent and received messages should appear in the Webex chat with the bot.
