@@ -1,0 +1,22 @@
+{
+  "name": "imidemo",
+  "version": "1.0.0",
+  "description": "Center of Excellent New Engagement Bot",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Taylor Hanson",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "got": "^11.8.3",
+    "mongodb": "^4.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "n"
+  }
+}

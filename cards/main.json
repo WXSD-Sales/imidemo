@@ -1,0 +1,145 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "$(useImageUrl)",
+                            "size": "Small",
+                            "spacing": "Small",
+                            "width": "50px",
+                            "height": "50px"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "size": "Medium",
+                            "weight": "Bolder",
+                            "text": "$(useTitle)",
+                            "spacing": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                }
+            ],
+            "spacing": "None"
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Small",
+            "isVisible": $(showInstructions),
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "5px"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "**1.** Select the team you'd like to notify (dropdown).",
+                            "wrap": true,
+                            "spacing": "None"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "**2.** Type in the message you'd like to send (125 char max).",
+                            "wrap": true,
+                            "spacing": "None"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "wrap": true,
+                            "spacing": "None",
+                            "text": "**3.** Click Send."
+                        }
+                    ]
+                }
+            ]
+        },
+        $(teamSelection)
+        {
+            "type": "Input.Text",
+            "placeholder": "Type Your Message Here...",
+            "id": "message",
+            "isMultiline": true,
+            "maxLength": 125
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Send",
+                    "id": "send",
+                    "data": {
+                        "submit": "send"
+                    }
+                },
+                {
+                    "type": "Action.ShowCard",
+                    "title": "Add Team",
+                    "card": {
+                        "type": "AdaptiveCard",
+                        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                        "version": "1.2",
+                        "body": [
+                            $(teamInstructions)
+                            {
+                                "type": "Input.Text",
+                                "placeholder": "Team Name",
+                                "spacing": "Small",
+                                "id": "name"
+                            },
+                            {
+                                "type": "Input.Text",
+                                "placeholder": "10 Digit US/CAN Phone Number",
+                                "spacing": "Small",
+                                "id": "number"
+                            },
+                            {
+                                "type": "ActionSet",
+                                "actions": [
+                                    {
+                                        "type": "Action.Submit",
+                                        "title": "Submit",
+                                        "id": "add_team",
+                                        "data": {
+                                            "submit": "add_team"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "Action.Submit",
+                    "title": "Delete Team",
+                    "id": "delete_team",
+                    "data": {
+                        "submit": "delete_team"
+                    },
+                    "style": "destructive"
+                }
+                $(customize)
+            ],
+            "spacing": "None"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2"
+}

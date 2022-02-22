@@ -1,0 +1,91 @@
+{
+    "type": "Action.ShowCard",
+    "title": "Customize",
+    "card": {
+        "type": "AdaptiveCard",
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "version": "1.2",
+        "body": [
+            {
+            "type": "TextBlock",
+            "text": "Required:",
+            "spacing": "None"
+            },
+            {
+            "type": "Input.Text",
+            "spacing": "Small",
+            "id": "token",
+            "placeholder": "Bot Access Token"
+            },
+            {
+            "type": "Input.Text",
+            "placeholder": "Card Image URL",
+            "spacing": "Small",
+            "id": "image_url"
+            },
+            {
+            "type": "TextBlock",
+            "text": "Optional:"
+            },
+            {
+            "type": "ColumnSet",
+            "columns": [
+            {
+                "type": "Column",
+                "width": "auto",
+                "items": [
+                    {
+                        "type": "TextBlock",
+                        "text": "Title:",
+                        "wrap": true,
+                        "spacing": "None",
+                        "horizontalAlignment": "Left",
+                        "isSubtle": true
+                    }
+                ],
+                "verticalContentAlignment": "Center",
+                "horizontalAlignment": "Left"
+            },
+            {
+                "type": "Column",
+                "width": "stretch",
+                "items": [
+                    {
+                        "type": "Input.Text",
+                        "placeholder": "Default: $(defaultCardTitle)",
+                        "spacing": "None",
+                        "id": "card_title"
+                    }
+                ],
+                "verticalContentAlignment": "Center",
+                "horizontalAlignment": "Left"
+            }
+            ],
+            "spacing": "Small"
+            },
+            {
+            "type": "Input.Toggle",
+            "title": "Show Instructions",
+            "value": "true",
+            "spacing": "Small",
+            "id": "show_instructions"
+            },
+            $(botChoices)
+            {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Add Bot",
+                    "id": "add_bot",
+                    "data": {
+                        "submit": "add_bot"
+                    }
+                }
+                $(editBotButton)
+                $(deleteBotButton)
+            ]
+            }
+        ]
+    }
+}
