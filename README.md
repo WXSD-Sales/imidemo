@@ -33,7 +33,8 @@ _Note: a team in the bot's context is currently just a single SMS number_
 ![Screen Shot 2022-02-22 at 4 51 17 PM](https://user-images.githubusercontent.com/19175490/155225656-48195814-411b-4eee-b910-4651439e3c64.png)
 3. Click send, and the mobile number configured as the team should receive the SMS.
 4. With your mobile device, you can reply one time to the message received by your mobile device.
-5. Both the sent and received messages should appear in the Webex chat with the bot.
+5. Both the sent and received messages should appear in the Webex chat with the bot.  
+![Screen Shot 2022-02-22 at 4 52 31 PM](https://user-images.githubusercontent.com/19175490/155225826-090ed425-0454-417a-b5b2-1a8ed321bfac.png)
 
 **Configuring a Custom Bot**  
 This bot can be themed to look more like a given org or customer's brand.  
