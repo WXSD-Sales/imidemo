@@ -21,7 +21,8 @@ To begin using the production version of this bot, **send a Webex message to imi
 _(You can send a Webex message to a bot the same way you send a message to a person)_  
 
 **Configuring a Team**  
-1. If you have no teams configured, you should add a team first with the add team button.
+1. If you have no teams configured, you should add a team first with the add team button.  
+![Screen Shot 2022-02-22 at 4 47 12 PM](https://user-images.githubusercontent.com/19175490/155225388-a8eb67ea-fa91-40f5-9a96-0a4b69013b89.png)
 2. You can enter any team name (i.e. your name)
 3. And any US/Canadian, or Irish mobile number that is SMS enabled. (i.e. your cell/mobile number)  
 _Note: a team in the bot's context is currently just a single SMS number_  
