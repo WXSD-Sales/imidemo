@@ -37,7 +37,8 @@ _Note: a team in the bot's context is currently just a single SMS number_
 This bot can be themed to look more like a given org or customer's brand.  
 To get started, click the customize button of the card returned by imidemo@webex.bot. Then,
 1. [Create a Webex bot](https://developer.webex.com/my-apps/new/bot).  The bot's name and icon should fit the desired look and feel.  For example, if you are creating the bot to look like a bot for a specific retail store, consider naming the bot something like, "My Retail Store Notification Bot," and using the logo of the retailer as the bot's icon.
-2. Once you've created the bot, enter the bot's auth token in the corresponding card field.
+2. Once you've created the bot, enter the bot's auth token in the corresponding card field.  
+![customize](https://user-images.githubusercontent.com/19175490/155225177-10c321e7-0a4e-4824-9038-b7b9ec7fc761.png)
 3. Use an image for the card header.  This can be the same image you used as the bot's logo, or a different image, but the image will need to be a public link to a .jpg or .png file.
 4. Optionally, uncheck or check "Show Instructions"
 5. Optionally change the name of the card header
