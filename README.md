@@ -54,7 +54,9 @@ To get started, click the customize button of the card returned by imidemo@webex
 
 
 
-### Built With
+## Setup
+
+### Prerequisites & Dependencies: 
 node v14.5.0  
 npm 7.24.2  
 
@@ -77,8 +79,12 @@ npm start
 ```
 
 ## License
+All contents are licensed under the MIT license. Please see [license](LICENSE) for details.
 
-Distributed under the MIT License.
+
+## Disclaimer
+<!-- Keep the following here -->  
+ Everything included is for demo and Proof of Concept purposes only. Use of the site is solely at your own risk. This site may contain links to third party content, which we do not warrant, endorse, or assume liability for. These demos are for Cisco Webex usecases, but are not Official Cisco Webex Branded demos.
 
 <!-- CONTACT -->
 
